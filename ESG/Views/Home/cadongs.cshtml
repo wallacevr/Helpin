@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Cadastro de ONG";
+}
+
+  <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <form action="/ongs/cadastrar" method="POST" enctype="multipart/form-data">
+
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome da ONG *</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">E-mail *</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="telefone" class="form-label">Telefone</label>
+                  <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="atuacao" class="form-label">Área de Atuação *</label>
+                  <select class="form-select" id="atuacao" name="atuacao" required>
+                    <option value="">Selecione</option>
+                    <option>Educação</option>
+                    <option>Saúde</option>
+                    <option>Meio Ambiente</option>
+                    <option>Animais</option>
+                    <option>Idosos</option>
+                    <option>Outros</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="cidade" class="form-label">Cidade</label>
+                  <input type="text" class="form-control" id="cidade" name="cidade">
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="descricao" class="form-label">Sobre a ONG</label>
+                <textarea class="form-control" id="descricao" name="descricao" rows="4" placeholder="Conte sobre a missão da sua ONG, público atendido, projetos..."></textarea>
+              </div>
+
+              <div class="mb-4">
+                <label for="logo" class="form-label">Logo da ONG</label>
+                <input class="form-control" type="file" id="logo" name="logo" accept="image/*">
+              </div>
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <i class="bi bi-check-circle me-2"></i>Cadastrar ONG
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>

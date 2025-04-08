@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+  <!-- Título e Introdução -->
+  <section class="bg-white py-5 text-center border border-dark rounded">
+    <div class="container">
+      <h1 class="mb-3">Encontre uma ONG para ajudar</h1>
+      <p class="lead">Escolha uma causa que combina com você e faça a diferença.</p>
+    </div>
+  </section>
+
+  <!-- Filtro (opcional) -->
+  <section class="container my-4">
+    <form class="row g-3 justify-content-center">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Buscar por nome ou causa">
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary"><i class="bi bi-search"></i> Buscar</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Lista de ONGs -->
+  <section class="container py-4">
+    <div class="row g-4">
+      
+      <!-- Card ONG -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="~/img/educacao.jpg" class="card-img-top" alt="ONG Educação">
+          <div class="card-body">
+            <h5 class="card-title">Educar para o Futuro</h5>
+            <p class="card-text">Promove reforço escolar para crianças em situação de vulnerabilidade.</p>
+            <span class="badge bg-primary">Educação</span>
+          </div>
+          <div class="card-footer text-center bg-white border-0">
+            <a href="#" class="btn btn-outline-primary">Quero ajudar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outro Card -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="~/img/cachorros.jpg" class="card-img-top" alt="ONG Animais">
+          <div class="card-body">
+            <h5 class="card-title">Cão Sem Dono</h5>
+            <p class="card-text">ONG dedicada ao resgate e adoção responsável de animais abandonados.</p>
+            <span class="badge bg-success">Animais</span>
+          </div>
+          <div class="card-footer text-center bg-white border-0">
+            <a href="#" class="btn btn-outline-success">Quero ajudar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outro Card -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="~/img/idosos.jpg" class="card-img-top" alt="ONG Idosos">
+          <div class="card-body">
+            <h5 class="card-title">Cuidar é Amar</h5>
+            <p class="card-text">Atua com visitas e doações para casas de repouso e idosos carentes.</p>
+            <span class="badge bg-warning text-dark">Idosos</span>
+          </div>
+          <div class="card-footer text-center bg-white border-0">
+            <a href="#" class="btn btn-outline-warning">Quero ajudar</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>

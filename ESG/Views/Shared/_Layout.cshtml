@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ESG</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ESG.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-white bg-white">
+        <a class="navbar-brand" href="#"><img src="~/img/logo.webp" alt="" class="  logo gradient-mask"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ongs Para Ajudar</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cadastro
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">ONG</a>
+                <a class="dropdown-item" href="#">Voluntário</a>
+            </li>
+            </ul>
+
+        </div>
+    </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <footer class="bg-light text-dark pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+        
+        <!-- Sobre -->
+        <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold">Sobre a HelpIn</h5>
+            <p>A HelpIn conecta voluntários com ONGs que precisam de apoio. Juntos, fazemos a diferença!</p>
+        </div>
+        
+        <!-- Links úteis -->
+        <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold">Links úteis</h5>
+            <ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">Perguntas Frequentes</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Como Funciona</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Cadastrar ONG</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Seja um Voluntário</a></li>
+            </ul>
+        </div>
+        
+        <!-- Contato / Redes sociais -->
+        <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold">Fale com a gente</h5>
+            <p>Email: <a href="mailto:contato@helpin.org" class="text-dark">contato@helpin.org</a></p>
+            <div class="d-flex gap-3 mt-3">
+            <a href="#" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-dark fs-5"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="text-dark fs-5"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- Linha final -->
+        <div class="text-center mt-4 border-top pt-3">
+        <small>&copy; 2025 HelpIn. Todos os direitos reservados.</small>
+        </div>
+    </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
