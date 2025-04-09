@@ -95,3 +95,4 @@ C:\Users\walla\OneDrive\Documentos\FATEC\DesenvolvimentoWEB\Telas\ESG\obj\Debug\
 C:\Users\walla\OneDrive\Documentos\FATEC\DesenvolvimentoWEB\Telas\ESG\obj\Debug\net9.0\compressed\2pbmp5na0d-861en6r03l.gz
 C:\Users\walla\OneDrive\Documentos\FATEC\DesenvolvimentoWEB\Telas\ESG\obj\Debug\net9.0\compressed\tbnzis8o7k-861en6r03l.gz
 C:\Users\walla\OneDrive\Documentos\FATEC\DesenvolvimentoWEB\Telas\ESG\obj\Debug\net9.0\compressed\5tu3rdmiqw-kexn7jy00l.gz
+C:\Users\walla\OneDrive\Documentos\FATEC\DesenvolvimentoWEB\Telas\ESG\obj\Debug\net9.0\ESG.sourcelink.json

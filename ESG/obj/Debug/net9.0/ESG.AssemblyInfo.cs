@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ESG")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fffae76842e223cc143d34b5bd5a546f3f748a87")]
 [assembly: System.Reflection.AssemblyProductAttribute("ESG")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ESG")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
